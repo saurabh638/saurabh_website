@@ -1,0 +1,32 @@
+.services {
+  position: relative;
+  z-index: 1;
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background:url(../../assets/img/curve-bg.jpg) no-repeat ;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+.service-block {
+  background: #fff;
+  @include box-shadow(0 0 50px 0 rgba(43,43,43,.1));
+  padding: 30px 20px;
+  margin-top: 30px;
+  border-radius: 4px;
+  .block-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.sr-icon {
+  img {
+    max-height:120px;
+    width: auto;
+  }
+}

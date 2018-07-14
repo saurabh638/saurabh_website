@@ -1,0 +1,47 @@
+.about-me-text {
+  .lead, h4{
+    font-size: 24px;
+    color: #000;
+    line-height: 36px;
+  }
+  > h4 {
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+}
+
+.personal-info {
+  > li {
+    width: 50%;
+    float: left;
+    padding-bottom: 5px;
+    > strong {
+        display: inline-block;
+        font-weight: 500;
+        margin-right: 10px;
+        width: 25%;
+      color: #333;
+    }
+  }
+}
+
+
+@media (max-width:767px){
+  .personal-info {
+    > li {
+      width: 100%;
+      float: none; 
+      > strong {
+        width: auto;
+      }
+    }
+  }
+} 
+@media (max-width:576px){
+  .about-me-text {
+    .btn {
+      margin-bottom: 15px;
+      display: block;
+    }
+  }
+} 

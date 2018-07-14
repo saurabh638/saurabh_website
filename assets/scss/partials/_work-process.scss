@@ -1,0 +1,31 @@
+.work-process {
+  background: #fafafa;
+  .row.mt-100 {
+    margin-top: 100px;
+  }
+}
+.work-process-text {
+  @include box-shadow();
+  border-radius: 4px;
+  background: #fff;
+  padding: 40px;
+}
+.work-process-count {
+  > h4 {
+      font-size: 100px;
+      opacity: .10;
+      font-weight: normal;
+      color: $base-color;
+  }
+}
+.work-proc-icon {
+	text-align: center;
+}
+
+@media (max-width:767px){
+  .work-process {
+    .row.mt-100 {
+      margin-top: 60px;
+    }
+  }
+}

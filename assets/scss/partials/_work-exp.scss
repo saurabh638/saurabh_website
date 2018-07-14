@@ -1,0 +1,35 @@
+.work-exp-block {
+  position: relative;
+  background: #fff;
+  @include box-shadow();
+  padding: 30px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.company-name {
+  margin: 20px 0;
+  font-weight: normal;
+}
+.working-duration {
+    @include theme-gradient-bottom-to-top;
+    position: absolute;
+    color: #fff;
+    height: 35px;
+    z-index: 90;
+    width: 300px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 30px;
+    z-index: 90;
+    right: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:576px){
+  .work-exp-block {
+    padding-right: 80px;
+  }
+}

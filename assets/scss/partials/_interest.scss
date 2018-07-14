@@ -1,0 +1,24 @@
+.interest-block {
+  @include box-shadow(0 0 30px 0 rgba(0,0,0,.05));
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px auto 0;
+  background: #fff;
+  text-align: center;
+  align-items: center;
+  height: 180px;
+  border-radius: 4px;
+  color: #000;
+  > .lnr {
+    color: #c5c5c5;
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  &:hover {
+    .lnr {
+      color: $base-color;
+    }
+  }
+}

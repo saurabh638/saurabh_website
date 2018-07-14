@@ -1,0 +1,20 @@
+.fun-fact {
+  background:url(../../assets/img/fun-fact.jpg) no-repeat scroll 0 0;
+  background-size: cover;
+  color: #fff;
+}
+.fun-fact-icon {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: $base-color;
+}
+.fun-fact-count {
+  font-size: 36px;
+  color: $base-color; 
+  font-weight: normal;
+}
+.client-logo {
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+}

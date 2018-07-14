@@ -1,0 +1,37 @@
+.edu-info-text {
+  @include box-shadow;
+  padding: 30px;
+  border-radius: 4px;
+  margin-left: 50px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    left: -25px;
+    transform: rotate(45deg) translate(0, -50%);
+    top: 50%;
+  }
+}
+.institute-name {
+  color: #777;
+  font-weight: normal;
+}
+.edu-session {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  -webkit-transform: rotate(90deg) translateX(-50%);
+  -ms-transform: rotate(90deg) translateX(-50%);
+  transform: rotate(90deg) translateX(-50%);
+  -webkit-transform-origin: left top 0;
+  -ms-transform-origin: left top 0;
+  transform-origin: left top 0;
+  color: $base-color;
+  margin: 0;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}

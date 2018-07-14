@@ -1,0 +1,103 @@
+/*Variable and mixin*/
+$base-color:#ff9801;
+@mixin theme-gradient-horizontal($start-color:#fb881d, $end-color: #ffad34, $start-percent: 0%, $end-percent: 100%) {
+  background-image: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); 
+  background-image: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1);
+}
+
+@mixin theme-gradient-horizontal-tranparent($start-color:#fb881d, $end-color: #ffad34, $opacity:.9) {
+    background: -moz-linear-gradient(left, rgba($start-color, $opacity) 0%, rgba($end-color, $opacity) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba($start-color, $opacity) 0%, rgba($end-color, $opacity) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba($start-color, $opacity) 0%, rgba($end-color, $opacity) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba($top-color, $opacity)', endColorstr='rgba($top-color, $opacity)',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin theme-gradient-vertical($start-color: #fb881d, $end-color: #ffad34, $start-percent: 0%, $end-percent: 100%) {
+  background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent); 
+  background-image: -o-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent); 
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0);
+}
+@mixin theme-gradient-bottom-to-top($start-color:#fb881d, $end-color: #ffad34, $start-percent: 0%, $end-percent: 100%) {
+  background-image: -webkit-linear-gradient(right, $start-color $start-percent, $end-color $end-percent); 
+  background-image: -o-linear-gradient(right, $start-color $start-percent, $end-color $end-percent);
+  background-image: linear-gradient(to left, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1);
+}
+
+@mixin box-shadow( $default:0 0 30px 1px rgba(0,0,0,.10)){
+  box-shadow: $default;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  color: #555;
+  line-height:28px; 
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+}
+img {
+  max-width: 100%;
+}
+p {
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+  transition: .3s;
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+    color: $base-color;
+    outline: none;
+  }
+}
+blockquote, pre {
+  padding: 20px;
+  border-left: 3px solid $base-color;
+  font-size: 18px;
+  font-style: italic;
+  background: #f8f8f8;
+  line-height: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+input, textarea {
+  width: 100%;
+  padding: 6px 12px;
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  margin-bottom: 30px;
+  color: #777777 ;
+  &:focus {
+    outline: none;
+  }
+
+
+} 
+
+@media (max-width:991px){
+  section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+
+
+
+
+
+
