@@ -1,0 +1,72 @@
+.contact-block {
+  @include box-shadow();
+  padding: 30px;
+  > h4 {
+    color: #000000;
+    margin-bottom: 50px;
+    position: relative;
+    &:after {
+      width: 50px;
+      height: 2px;
+      background: #000;
+      content: '';
+      top: 100%;
+      position: absolute;
+      left: 0;
+      margin-top: 15px;
+    }
+  }
+  .color-social {
+    margin: 5px;
+  }
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.con-icon {
+    margin-right: 15px;
+}
+#map {
+  margin-top: 100px;
+}
+.contact-bottom-content {
+  background: url(../../assets/img/contact-bottom.jpg) no-repeat scroll 0 0;
+  background-size: cover;
+  padding-bottom: 350px;
+}
+.contact-hero-text {
+    font-size: 34px;
+    font-weight: 300;
+    line-height: normal;
+}
+.form-control {
+  border-color: #e7e7e7;
+  color: #777;
+  font-family: inherit;
+  padding: 12px;
+}
+
+.has-danger .form-control {
+    border-color: red;
+}
+
+@media (max-width:767px){
+  .contact-bottom-content {
+      padding-bottom: 150px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

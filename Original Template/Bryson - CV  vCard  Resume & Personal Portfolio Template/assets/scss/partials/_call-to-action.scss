@@ -1,0 +1,10 @@
+.call-to-action {
+  font-size: 18px;
+  .section-title {
+    top: 0;
+    margin-bottom: 10px;
+    &:after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,134 @@
+.intro-hero {
+  background: url(../../assets/img/intro-hero.jpg) no-repeat scroll 0 0 ;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 120px;
+  color: #fff;
+} 
+
+.btn-play-video {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #b8b3c6;
+  max-width: 150px;
+  margin-left: auto;
+  > svg {
+  width: 30px;
+  height: 30px;
+  fill:$base-color; 
+  }
+  
+  span {
+    text-align: left;
+    line-height: 20px;
+    margin-left: 10px;
+  }
+  &:hover {
+    color: $base-color;
+  }
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.hero-tagline {
+  font-size: 30px;
+}
+
+.typelist-skill{
+  color: $base-color;
+  font-weight: bold;
+  > .selectedText {
+      display: none;
+  }
+  &:after{
+    position: relative;
+    top: 7px;
+    display: inline-block;
+    height: 30px;
+    margin-left: 5px;
+    content: " ";
+    animation: blink .5s step-end infinite alternate; 
+    border-right: 2px solid;
+  }
+  @-webkit-keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: .0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+@keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: .0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+  
+}
+
+.social-intro {
+  background: rgba($base-color, .30);
+  display: inline-block;
+  padding: 0 30px;
+  border-radius: 50px;
+  li {
+    padding: 0 5px;
+    a {
+      color: #fff;
+      opacity: .40;
+      padding: 5px;
+      display: block;
+      &:hover {
+        color: $base-color;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width:767px){
+  .social-intro {
+      padding: 0 10px;
+  }
+  
+}
+@media (max-width:576px){
+  .social-intro {
+    padding: 0 10px;
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .btn-play-video {
+    max-width: 150px;
+    margin: 10px auto;
+  }
+  .hero-title {
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+  .hero-tagline {
+      font-size: 24px;
+  }
+  
+}
+
+
+
+
+
