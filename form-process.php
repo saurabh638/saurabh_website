@@ -18,4 +18,9 @@
   $body .= "\n";
   mail($emailTo, $subject, $body);
 
+  if (mail){
+    header("Location: http://sauabhsharma.info/contact.html");
+    die();
+  }
+
 ?>
