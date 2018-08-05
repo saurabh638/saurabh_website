@@ -1,4 +1,13 @@
 <!--
+
+document.write('<!-- Global site tag (gtag.js) - Google Analytics -->')
+document.write('<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123354568-1"></script>')
+document.write('<script>')
+document.write('  window.dataLayer = window.dataLayer || [];')
+document.write('  function gtag(){dataLayer.push(arguments);}')
+document.write('  gtag('js', new Date());')
+document.write('  gtag('config', 'UA-123354568-1');')
+document.write('</script>')
 document.write(' <!-- Meta -->');
 document.write('  <meta charset="UTF-8">');
 document.write('  <meta name="viewport" content="width=device-width, initial-scale=1">');

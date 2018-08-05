@@ -16,10 +16,10 @@
   $body .= "Message: ";
   $body .= $message;
   $body .= "\n";
-  mail($emailTo, $subject, $body);
+  $mail = mail($emailTo, $subject, $body);
 
   if (mail){
-    header("Location: http://sauabhsharma.info/contact.html");
+    header("Location: http://saurabhsharma.info/contact.html");
     die();
   }
 
